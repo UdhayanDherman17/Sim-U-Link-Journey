@@ -4,4 +4,6 @@ The first project I will start with is to model the velocity of an object fallin
 Using the equation: Fd = av^2 
 I will first try to model the Drag proportion of the system. 
 
-First, we will need a source block of type Sine Wave. This will represent the velocity in the system. And since drag is proportional to velocity squared. So, we need to add a math function of squared operation to the output of the velocity block. Refer to (Figure 1) in Sys-Images.
+First, we will need a source block of type Sine Wave. This will represent the velocity in the system. And since drag is proportional to velocity squared. So, we need to add a math function of squared operation to the output of the velocity block. Refer to (Figure 1) in Sys-Images. This will allow us to obtain velocity squared.
+Next, we need to add the coefficient "a" to obtain Drag in our system. We do this by add ing a Gain block to the output of the math function block. refer to (Figure 2.)
+
