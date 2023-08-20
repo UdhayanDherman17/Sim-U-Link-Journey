@@ -1,2 +1,7 @@
 In this section, I will create small projects that will help me understand the logistics and possibilities of Simulink.
-The first project I will start with is to model the velocity of an object falling with the effects of air resistance. 
+The first project I will start with is to model the velocity of an object falling with the effects of air resistance(drag). 
+
+Using the equation: Fd = av^2 
+I will first try to model the Drag proportion of the system. 
+
+First, we will need a source block of type Sine Wave. This will represent the velocity in the system. And since drag is proportional to velocity squared. So, we need to add a math function of squared operation to the output of the velocity block. Refer to (Figure 1) in Sys-Images.
