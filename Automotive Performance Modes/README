@@ -20,7 +20,10 @@ We will simulate performance modes using "Constant Blocks" with constants 1 and 
 constant 2 if the signal carries the true condition and activate mode 2. Else if not >1 the switch will activate the "else" signal and output mode 1.
 (refer to Figure 1)
 
-If we attach a scope to the system we view the results. As the car is in mode 1 for about 1.3 seconds and activates mode 2 after for about 0.7 seconds 
-initially. This happens more times but where mode 2 is then activated for a shorter duration and then a longer duration. Then finally settled to mode 1 
-as the vehicle comes to a stop.
+If we attach a scope to the system we view the results. As the car is in mode 1 for about 1.3 seconds and activates mode 2 after for about 0.7 seconds.
+it seems the trigger condition what the speech>35lm/h and acceleration >3m/s^2. The second activation seems strange. like we see the that car is moving 
+less than 100km/h and accelerating less than 3m/s^2. So how did it activate? Absolute value! Although was slowing down, it was decreasing at a rate smaller 
+than -3m/s^2 thus taking ABS we get out trigger condition. The final activation point was the car traveling at 100km/h and we see it lasts longer on mode 2 
+that the other sections. This is because we see the car traveling faster than 100km/h and decelerates at a slower rate, therefore allowing mode 2 to stay 
+active for longer 
 (refer to Figure 2 for graphical results
