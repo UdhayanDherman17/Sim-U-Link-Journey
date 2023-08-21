@@ -1,1 +1,1 @@
-
+In this project, I will try to simulate the logic for an automotive performance package. Vehicles today have dozens of computers that together adjust the car's behavior in response to data read by hundreds of sensors. In this simplified system, let's assume that they are responding to two sensors —speed and lateral acceleration—to decide between a "high performance" and "economy" mode.
